@@ -1,0 +1,44 @@
+{
+  "name": "booklet",
+  "version": "1.0.0",
+  "description": "Practice project webapp for book collection ",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisMReverol/Booklet.git"
+  },
+  "keywords": [
+    "Book",
+    "outlet",
+    "collection"
+  ],
+  "author": "Luis Mendez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuisMReverol/Booklet/issues"
+  },
+  "homepage": "https://github.com/LuisMReverol/Booklet#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "core-js": "^3.6.5",
+    "css-loader": "^4.2.0",
+    "html-webpack-plugin": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "regenerator-runtime": "^0.13.7",
+    "sass-loader": "^9.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
