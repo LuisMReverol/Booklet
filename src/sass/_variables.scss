@@ -1,21 +1,29 @@
-//Colors
+//colors
+$color-black: #000000;
 $color-white: #ffffff;
 $color-grey-dark-1: #4d4d4d;
 $color-grey-dark-2: #0000004d;
 $color-grey-light-1: #f8f8f8;
+$color-grey-light-2: #cccccc;
 $color-grey-light-3: #b5b5b5;
 $color-primary: #00f260;
 $color-secondary: #0575e6;
-$color-black: #000000;
 
-//Margins
+//margins
 
 $margin-section: 10rem;
 $margin-paragraph: 2rem;
 $margin-buttons: 3rem;
 
-$shadow-button: 0 1rem 2rem rgba($color-black, 0.2);
+//shadow
+
+$shadow: 0 1rem 2rem rgba($color-black, 0.2);
 
 //border-radius
 
 $radius-small: 10px;
+$radius-big: 100px;
+
+//transitions
+
+$transition: all 0.2s;

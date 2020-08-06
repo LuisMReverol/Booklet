@@ -1,27 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="A book outlet to keep track of your readings"
+    />
+
+    <title>Booklet</title>
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+
+    <link rel="manifest" href="../dist/img/site.webmanifest" />
+
+    <!-- Fonts -->
 
     <link
       href="https://fonts.googleapis.com/css2?family=Merienda&family=MuseoModerno:wght@400;500&display=swap"
       rel="stylesheet"
     />
-
-    <title>Booklet</title>
   </head>
   <body>
     <div class="container">
       <header class="header">
-        <img src="./img/book.png" alt="Booklet Logo" class="header__logo" />
+        <div class="header__logo">
+        <img src="./img/book.png" alt="Booklet Logo" class="header__logo--img" />
         <h1 class="tittle">Booklet</h1>
+      </div>
+
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="Search books" />
+          <button class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="./img/symbol-defs.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
       </header>
 
       <div class="section-1"></div>
       <div class="section-2"></div>
       <div class="section-3"></div>
+      <footer class="footer">
+        <p class="copyright">&#169; Copyright</p>
+      </footer>
     </div>
   </body>
 </html>
