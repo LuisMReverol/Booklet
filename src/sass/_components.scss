@@ -1,53 +1,75 @@
 .search {
   flex: 0 0 40%;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin-left:7%;
+  margin-left: 7%;
 
   &__input {
-      width: 90%;
-      padding: 0.7rem 2rem;
-      margin-right:-3.50rem;
-      border-radius: $radius-big;
+    width: 90%;
+    padding: 0.7rem 2rem;
+    margin-right: -3.5rem;
+    border-radius: $radius-big;
 
-      transition: $transition;
+    transition: $transition;
 
-      &:focus {
-        width: 100%;
+    &:focus {
+      width: 100%;
 
-        outline: none;
-        background-color: $color-grey-light-3;
-      }
-
+      outline: none;
       background-color: $color-grey-light-3;
-  }
+    }
 
-  &__input:focus + &__button{
     background-color: $color-grey-light-3;
   }
 
-  &__button {
-    border: none;
-    border-radius: $radius-big;
+  &__input:focus + &__button {
+    background-color: $color-grey-light-3;
+  }
+}
 
-    background-image: linear-gradient($color-primary, $color-secondary);
+.button {
+  border: none;
+  border-radius: $radius-big;
 
-    &:focus {
-        outline: none;
-      }
-  
-      &:active {
-        transform: translateY(2px);
-      }
+  background-image: linear-gradient($color-primary, $color-secondary);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    transform: translateY(2px);
   }
 
   &__icon {
     height: 2.9rem;
     width: 2.5rem;
-
+  
     fill: $color-grey-light-3;
-
+  
     cursor: pointer;
+  }
+  
+}
+
+.img-container{
+  height: 6 rem;
+  margin: 0.5rem;
+
+  &__book {
+    height: 7.5rem;
+    
+  }
+}
+
+
+.title {
+  height: 30vh;
+  max-width: 50rem;
+  overflow: hidden;
+
+  &__img {
+    height: 70rem;
   }
 }

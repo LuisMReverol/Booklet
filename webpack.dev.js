@@ -1,30 +1,24 @@
 const path = require("path");
+const common = require("./webpack.common");
+const { merge } = require("webpack-merge");
+var HtmlWebpackPlugin = require("html-webpack-plugin");
 
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-
-module.exports = {
-  entry: ["./src/index.js", "./src/main.scss"],
+module.exports = merge(common, {
+  mode: "development",
   output: {
-  path: path.resolve(__dirname, "dist"),
-  filename: "js/bundle.js",},
-  devServer: {
-    contentBase: "./dist",
+    filename: "[name].js",
+    path: path.resolve(__dirname, "dist"),
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: "index.html",
       template: "./src/index.html",
+      filename: "index.html",
     }),
   ],
   module: {
     rules: [
       {
-        test: /\.(js)$/,
-        exclude: /node_modules/,
-        use: ["babel-loader"],
-      },
-      {
-        test: /\.s[ac]ss$/i,
+        test: /\.s[ac]ss$/,
         use: [
           "style-loader",
           "css-loader",
@@ -38,4 +32,4 @@ module.exports = {
       },
     ],
   },
-};
+});

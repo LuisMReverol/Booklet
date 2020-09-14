@@ -16,17 +16,51 @@
       height: 5rem;
       margin-right: 0.5rem;
     }
-    
   }
 }
 
-.section-1 {
+.catalog {
   grid-area: area-1;
 
-  background-color: $color-primary;
+  background-color: $color-grey-dark-2;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    list-style: none;
+    padding: 1rem;
+
+    &--book {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
-.section-2 {
+.book-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-size: 1.1rem;
+  line-height: 1;
+  color: $color-black;
+}
+
+.description {
   grid-area: area-2;
 
   background-color: $color-secondary;
@@ -39,7 +73,7 @@
 }
 
 .footer {
-  grid-area:footer;
+  grid-area: footer;
 
   display: flex;
   justify-content: center;
